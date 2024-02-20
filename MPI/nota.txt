@@ -1,0 +1,12 @@
+Instalar los paquetes necesarios para esta bilblioteca.
+* sudo apt-get install  mpich mpich-doc
+
+Proceso de compilación y ejecución
+
+Suponiendo que el ejemplo se encuentra en el archivo suma.c y usamos  la implementación de MPI conocida por MPICH2.
+
+Compilación:
+mpicc -o Suma suma.c
+
+Ejecución:
+mpirun -np 4 ./Suma
