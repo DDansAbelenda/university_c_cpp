@@ -1,0 +1,13 @@
+Pasos para poder compilar de forma interactiva los ejercicios de CUDA:
+
+1- salloc -p gpu
+2- ssh nodogpu01
+3- ml CUDA
+
+Nota: 
+Para compilar deben usar el compilador de nvidia para cuda y especificarle la arquitectura que para la Tesla K80 que es la que esta en el cluster es la sm_37. Por ejemplo si tienen un pograma ejemplo.cu para compilarlo seria:
+
+nvcc -arch=sm_37 ejemplo.cu -o ejemplo
+
+Traten de hacerlo todo a traves del script pues como es un unico nodo si lo hacen interactivo solo puede estar uno a la vez
+Publicado en el Moodle un script de ejemplo para la compilacion y ejecucion de programas con CUDA
