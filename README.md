@@ -1,4 +1,4 @@
-# university
+# university_c_c++
 
 Este repositorio contiene varios proyectos relacionados con la programación paralela y un ejemplo de comunicación RPC.
 
